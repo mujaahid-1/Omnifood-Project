@@ -365,7 +365,7 @@
 /**********************************/
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .pricing-plan {
@@ -442,7 +442,6 @@
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
-  
 }
 
 .feature-icon {
@@ -502,7 +501,13 @@
 }
 
 .cta-img-box {
-  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.3), rgba(230, 125, 34, 0.3)),url('../img/eating.jpg');
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -521,7 +526,8 @@
   margin-bottom: 1.2rem;
 }
 
-.cta-form input, .cta-form select {
+.cta-form input,
+.cta-form select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -546,5 +552,74 @@
 /**********************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts p {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
